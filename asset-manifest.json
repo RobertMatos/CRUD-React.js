@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CRUD-React.js/static/css/main.50579753.css",
+    "main.js": "/CRUD-React.js/static/js/main.3837531b.js",
+    "static/media/logo-conecti.svg": "/CRUD-React.js/static/media/logo-conecti.f588dbb9c66466c52d60806ec91a01fd.svg",
+    "index.html": "/CRUD-React.js/index.html",
+    "main.50579753.css.map": "/CRUD-React.js/static/css/main.50579753.css.map",
+    "main.3837531b.js.map": "/CRUD-React.js/static/js/main.3837531b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50579753.css",
+    "static/js/main.3837531b.js"
+  ]
+}
