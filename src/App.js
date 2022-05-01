@@ -1,4 +1,3 @@
-import './App.scss';
 import Router from './routes';
 import style from './styles/main.scss';
 

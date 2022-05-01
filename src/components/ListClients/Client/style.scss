@@ -19,27 +19,35 @@
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
-  
-    .edit, .delete {
-        color:button-color;
-        width: 2.2rem;
-        height: 2.2rem;
 
-        @media only screen and (max-width: 480px){
-            margin-top: 1rem;
-        }
-    }
+    .buttons{
+        display: flex;
+        justify-content: flex-end;
+        .edit, .delete {
+            color: $button-color;
+            width: 2.5rem;
+            height: 2.5rem;
     
-    .edit:hover {
-        color:$yellow-color;
-    }
-
-    .delete {
-        margin-left: 1rem;
-
-        &:hover{
-            color:$red-color
+            @media only screen and (max-width: 480px) {
+                margin-top: 1rem;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        
+        .edit:hover {
+            color:$yellow-color;
+        }
+    
+        .delete {
+            margin-left: 1rem;
+    
+            &:hover {
+                color:$red-color
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            width: 100%;
         }
     }
-
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 function AddClient () {
@@ -14,8 +15,20 @@ function AddClient () {
             clientEmail,
             clientCnpj
         })
-        .then(res=> console.log(res))
-        .catch(err => console.log(err))
+        .then(res=> {
+            console.log(res)
+            toast.success("Cliente adicionado com sucesso");
+            return <Navigate to="/" />
+        })
+        .catch(err => {
+              if (err.response) {
+                toast.error(err);
+              }
+        
+              if (err.isAxiosError) {
+                toast.error('Desculpe, não conseguimos acessar a API :( !!');
+              }
+        })
     }
 
   return (
@@ -46,7 +59,6 @@ function AddClient () {
                     onChange={(e) => setClientCnpj(e.target.value)}
                 />
             </div>
-            <Link to="/">
                 <button 
                     type="submit" 
                     className="submit-button"
@@ -54,7 +66,6 @@ function AddClient () {
                 >
                     Enviar
                 </button>
-            </Link>
         </div>
     </div>
   )
