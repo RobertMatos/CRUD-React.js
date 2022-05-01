@@ -1,0 +1,54 @@
+.search-container {
+    margin: 2rem 0 1rem;
+    position: relative;
+    height: 42px;
+    border-radius: 40px;
+    padding: 2px 20px 2px 25px;
+    border: 1px solid $darkGray-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $white-color;
+
+    align-self: flex-end;
+
+    input {
+        border: none;
+        outline: none;
+        font-size: 2rem;
+    
+        color: $input-color;
+        width: 100%;
+    }
+
+    svg {
+        color:  #cac7c7;
+        height: 24px;
+        width: 24px;
+    
+        transition: color 0.3s ease-in-out;
+    
+        &:hover {
+          color: $primary-color;
+        }
+    }
+
+    button {
+        position: absolute;
+        background: none;
+        border: none;
+        right: 10px;
+    
+        cursor: pointer;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+}

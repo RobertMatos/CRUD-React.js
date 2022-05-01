@@ -1,0 +1,31 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem 3rem;
+
+    a {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .add-button {
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        border: 2px dashed $darkGray-color;
+        font-size: 1.6rem;
+        color: $button-color;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 8rem;
+        width: 100%;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+}

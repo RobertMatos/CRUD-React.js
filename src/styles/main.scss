@@ -1,0 +1,12 @@
+@import './theme';
+
+@import './reset.scss';
+@import '../index.scss';
+
+
+@import '../components/Header/style.scss';
+@import './form.scss';
+
+@import '../components/ListClients/style.scss';
+@import '../components/Search/style.scss';
+@import '../components/ListClients/Client/style.scss';

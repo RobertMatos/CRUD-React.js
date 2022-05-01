@@ -1,0 +1,45 @@
+.client-card {
+    background: $white-color;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    p {
+        color: $lightGray-color;
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+  
+    .edit, .delete {
+        color:button-color;
+        width: 2.2rem;
+        height: 2.2rem;
+
+        @media only screen and (max-width: 480px){
+            margin-top: 1rem;
+        }
+    }
+    
+    .edit:hover {
+        color:$yellow-color;
+    }
+
+    .delete {
+        margin-left: 1rem;
+
+        &:hover{
+            color:$red-color
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+
+header{
+    background: $white-color;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 2rem;
+    border-bottom: 2px solid $darkGray-color;
+
+    img {
+        width: 100%;
+    }
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-right: 6px;
+        border-radius: 100%;
+        border: 1px solid $darkGray-color;
+        
+        &:first-child{
+            border: none;
+            border-radius: 0;
+        }
+
+        &:nth-child(3){
+            background: $primary-color;
+            .MuiSvgIcon-root{
+                fill: #fff;
+            }
+        }
+    }
+
+    svg{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+    }
+
+    .MuiSvgIcon-root{
+        fill: $darkGray-color;
+        width: 3.5rem;
+        height: 3.5rem;
+        
+        &:hover:not(.last){
+            opacity: 0.5;
+        }
+    }
+}
